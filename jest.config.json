@@ -1,0 +1,19 @@
+{
+    "moduleNameMapper" : {
+        "\\.(gif|ttf|eot|svg|png)$" : "<rootDir>/src/test/fileMock.js",
+        "\\.(css|less)$" : "<rootDir>/src/test/fileMock.js"
+    },
+    "transform": {
+        "^.+\\.jsx?$": "babel-jest"
+      },
+      "jest-junit": {
+        "suiteName": "jest tests",
+        "outputDirectory": "test-results",
+        "outputName": "junit.xml",
+        "uniqueOutputName": "false",
+        "classNameTemplate": "{classname}-{title}",
+        "titleTemplate": "{classname}-{title}",
+        "ancestorSeparator": " › ",
+        "usePathForSuiteName": "true"
+      } 
+}
